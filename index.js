@@ -14,7 +14,7 @@ const languages = {
   }
 };
 
-app.get('/', function (request, response) {
+app.get('/dailyencouragement', function (request, response) {
   const langParam = (String(request.query.lang) in languages)
     ? String(request.query.lang)
     : 'en';
